@@ -11,6 +11,7 @@
 </head>
 
 <body>
+        
     <div class="container">
         <h1>Customer</h1>
         <form>
@@ -38,9 +39,10 @@
             <div class="form-group">
                 <label for="mediaChannelSelect">How did you hear from us?</label>
                 <select class="form-control" id="mediaChannelSelect">
-                    <option>Internet</option>
-                    <option>Press</option>
-                    <option>Other</option>
+                    <option value="other">Other</option>
+                    <option value="internet">Internet</option>
+                    <option value="press">Press</option>
+                    
                 </select>
             </div>
             <div class="form-group">
@@ -52,13 +54,16 @@
                     Subscribe to newsletter
                 </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
         </form>
     </div>
 
+    
     <script src="jquery.js"></script>
-    <script src="bootstrap.js"></script>
     <script src="index.js"></script>
+    <script src="bootstrap.js"></script>
+    
+    
 </body>
 
 </html>
